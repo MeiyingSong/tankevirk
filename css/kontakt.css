@@ -1,0 +1,146 @@
+.kontakt-title {
+  font-size: 32px;
+}
+
+section.kontakt-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-top: 40px;
+  margin-bottom: 40px;
+  gap: 40px;
+}
+
+.kontakt-section-left-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.left-brødtekst {
+  max-width: 400px;
+  font-size: 18px;
+}
+
+.kontakt-section-right-column {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  align-items: flex-start;
+}
+
+.kontakt-form {
+  background-color: #eee;
+  border-radius: 8px;
+  padding: 32px;
+  width: 400px;
+}
+
+.kontakt-section-div-img {
+  height: 500px;
+  margin-top: 30px;
+}
+
+.kontakt-section-img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.h2 {
+  margin-bottom: 24px;
+}
+
+.form-element {
+  margin-bottom: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-element label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 500;
+  font-family: "Montserrat", serif;
+  font-size: 14px;
+}
+
+.form-element input,
+textarea {
+  flex: 1;
+  padding: 12px;
+  border-radius: 2px;
+  box-shadow: none;
+  border: none;
+  font-size: 18px;
+  box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.25);
+}
+
+.form-element select {
+  font-size: 18px;
+  flex: 1;
+  padding: 12px;
+}
+
+.kontakt-mig-btn {
+  width: 100%;
+}
+
+.logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 6rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.logos img {
+  max-width: 100px;
+  height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .logos {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 800px) {
+  .hideOnMobile {
+    display: none;
+  }
+  .menu-button {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  section.kontakt-section {
+    grid-template-columns: 1fr;
+    padding: 0px 20px;
+    text-align: center;
+  }
+  .kontakt-section label {
+    text-align: left;
+  }
+  .kontakt-form {
+    width: 100%;
+  }
+  .cert {
+    flex-wrap: wrap;
+    padding: 0 20px;
+    gap: 20px;
+  }
+  .cert img {
+    width: 100%;
+    object-fit: contain;
+  }
+  .cert-title {
+    text-align: center;
+  }
+}
+
+.nested-link {
+  display: none;
+  margin-left: 25px;
+}

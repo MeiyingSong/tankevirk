@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tankevirk</title>
+    <link rel="stylesheet" href="css/forside.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <!--Swiper css-->
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <nav>
+      <ul class="sidebar">
+        <li onclick="hideSidebar()">
+          <a href="#"
+            ><img
+              src="img/cross.svg"
+              height="16"
+              viewbox="0 96 960 960"
+              width="26"
+              alt=""
+          /></a>
+        </li>
+        <li><a href="omtankevirk.html">Om Tankevirk</a></li>
+        <li>
+          <a class="dropdownLink">Jeg tilbyder</a>
+        </li>
+        <li class="nested-link"><a href="jegtilbyder.html">Terapi</a></li>
+        <li class="nested-link">
+          <a href="jegtilbyder.html#hypnose">Hypnose</a>
+        </li>
+        <li class="nested-link"><a href="kurser.html">Kurser</a></li>
+        <li class="nested-link"><a href="coaching.html">Coaching</a></li>
+        <li><a href="priser.html">Priser</a></li>
+        <li><a href="kontakt.html">Kontakt</a></li>
+        <li><a href="#">Bestil en tid</a></li>
+      </ul>
+
+      <ul>
+        <li>
+          <a href="forside.html"
+            ><img src="img/tankevirk-logo.svg" height="100"
+          /></a>
+        </li>
+        <li class="hideOnMobile">
+          <a href="omtankevirk.html">Om Tankevirk</a>
+        </li>
+        <li class="hideOnMobile dropdown">
+          <a href="jegtilbyder.html" class="dropdownLink">Jeg tilbyder</a>
+          <ul class="dropdown-menu">
+            <li><a href="jegtilbyder.html#samtale">Terapi</a></li>
+            <li><a href="jegtilbyder.html#hypnose">Hypnose</a></li>
+            <li><a href="kurser.html">Kurser</a></li>
+            <li><a href="coaching.html">Coaching</a></li>
+          </ul>
+        </li>
+        <li class="hideOnMobile"><a href="priser.html">Priser</a></li>
+        <li class="hideOnMobile"><a href="kontakt.html">Kontakt</a></li>
+        <li>
+          <a href="#" class="highlight-button hideOnMobile">Bestil en tid</a>
+        </li>
+        <li class="menu-button" onclick="showSidebar()">
+          <a href="#"
+            ><img
+              src="img/menu-burger.svg"
+              height="16"
+              viewbox="0 96 960 960"
+              width="26"
+              alt=""
+          /></a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="hero" aria-labelledby="hero-heading">
+      <div class="hero-content">
+        <div class="hero-text" aria-label="Hero section text content">
+          <h1 id="hero-heading">Find ro og refleksion</h1>
+          <p>
+            <strong>Hvorfor er selvindsigt vigtigt?</strong><br />
+            Selvindsigt er nøglen til at forstå dine følelser og mønstre. Ved at
+            arbejde med en terapeut kan du opnå en dybere forståelse af dig selv
+            og dine relationer. Sammen kan vi skabe en tryg ramme for din
+            personlige udvikling.
+          </p>
+          <p>
+            <strong>Hvordan kan jeg hjælpe?</strong><br />
+            Jeg tilbyder støtte og værktøjer, der hjælper dig med at håndtere
+            livets udfordringer, forbedre dine relationer og finde større
+            balance.
+          </p>
+          <p>
+            <strong>Hvem er jeg?</strong><br />
+            Med mange års erfaring inden for terapi brænder jeg for at skabe et
+            trygt og støttende rum, hvor du kan udforske de ting, der betyder
+            mest for dig.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="kontakt.html" class="btn-primary" aria-label="Kontakt"
+              >Kontakt</a
+            >
+            <a
+              href="omtankevirk.html"
+              class="btn-secondary"
+              aria-label="Læs mere"
+              >Læs mere</a
+            >
+          </div>
+        </div>
+
+        <div class="hero-image-container" aria-label="Hero image and quote">
+          <img src="img/hanne1.svg" alt="Hanne Aamand" class="hero-image" />
+          <div class="hero-quote" aria-label="Hero quote">
+            <p>
+              "Jeg tilbyder et ‘rum’, hvor vi i al fortrolighed kan udforske
+              det, du er optaget af her og nu."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="highlight-section" aria-labelledby="highlight-heading">
+      <div class="highlight-container">
+        <div class="highlight-shape"></div>
+        <div class="highlight-content">
+          <h2 id="highlight-heading">Lyder dette som dig?</h2>
+          <ul>
+            <li>
+              <strong>Vejet ned af angst, udbrændelse eller stress</strong>
+            </li>
+            <li><strong>Øget tillidsproblemer og lavt selvtillid</strong></li>
+          </ul>
+          <p>Lad os tage en snak om det!</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cards-section">
+      <div class="card">
+        <img src="img/hanne2.jpg" alt="Hanne præsenterer ved whiteboard" class="card-image"/>
+        <h3>Coaching</h3>
+        <p class="card-description">
+          Uanset størrelsen af et firma er medarbejderne noget af det vigtigste.
+          Ved hjælp af coaching kan enkelte medarbejdere såvel som teams blive
+          gjort stærkere, gladere og ikke mindst mere produktive.
+        </p>
+        <a href="jegtilbyder.html#coaching" class="card-button">Læs mere</a>
+      </div>
+
+      <div class="card">
+        <img src="img/hannesamterapi.jpg" alt="Samtale terapi" class="card-image" />
+        <h3>Samtaleterapi</h3>
+        <p class="card-description">
+          Føler du dig mere stresset end normalt, har du problemer med din
+          selvtillid eller føler du sorg? Så kan terapi være noget for dig. Jeg
+          udbyder forskellige former for terapi alt efter hvilke behov du som
+          person har.
+        </p>
+        <a href="jegtilbyder.html#samtale" class="card-button">Læs mere</a>
+      </div>
+
+      <div class="card">
+        <img
+          src="img/hannehyp.webp"
+          alt="Person slapper af på sofa"
+          class="card-image"
+        />
+        <h3>Hypnose</h3>
+        <p class="card-description">
+          Har du problemer med at slippe bestemte vaner som i længden sætter en
+          stopper for dig og gerne vil? Så kan hypnoseterapi være en god
+          mulighed at overveje.
+        </p>
+        <a href="jegtilbyder.html#hypnose" class="card-button">Læs mere</a>
+      </div>
+    </section>
+
+      <div class="carousel-dots">
+        <span class="dot active" data-index="0"></span>
+        <span class="dot" data-index="1"></span>
+        <span class="dot" data-index="2"></span>
+      </div>
+    </section>
+
+    <section class="mission-vision-values">
+      <div class="row">
+        <div class="block block-left">
+          <div
+            class="block-shape block-shape-left"
+            style="background-color: #6d90d8"
+          >
+            <h2>MISSION</h2>
+          </div>
+          <div class="block-content">
+            <p>
+              Tankevirk har missionen om at tilbyde et trygt og professionelt
+              rum, der både adresserer dagligdags udfordringer og dybere
+              problematikker. Jeg fokuserer på personlig udvikling og større
+              frihed gennem individuel terapi, gruppeterapi og workshops som
+              fleksible tilbud. Tankevirks mål er, at give enhver redskaberne til
+              varig forandring og øget livskvalitet, altid med klientens mål i
+              centrum.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="block block-right">
+          <div class="block-content">
+            <ul>
+              <li>
+                <strong>Empati:</strong> Jeg møder alle som unikke individer med
+                forståelse og respekt for deres rejse.
+              </li>
+              <li>
+                <strong>Bæredygtighed:</strong> Jeg tror på løsninger, der skaber
+                varig forandring og langsigtet trivsel.
+              </li>
+              <li>
+                <strong>Tilgængelighed:</strong> Mental sundhed skal være nemt
+                at forstå og tilgængeligt for alle.
+              </li>
+              <li>
+                <strong>Autenticitet:</strong> Jeg arbejder med ærlige og
+                gennemsigtige metoder, der bygger på evidens.
+              </li>
+            </ul>
+          </div>
+          <div
+            class="block-shape block-shape-right"
+            style="background-color: #001052"
+          >
+            <h2>VÆRDIER</h2>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="block block-left">
+          <div
+            class="block-shape block-shape-left"
+            style="background-color: #3f5072"
+          >
+            <h2>VISION</h2>
+          </div>
+          <div class="block-content">
+            <p>
+              Tankevirk arbejder for at skabe en verden, hvor mental sundhed er
+              lige så naturlig at prioritere som fysisk sundhed - og ønsker at
+              være din base, når livet udfordrer, og tilbyde stabil støtte med
+              fokus på redskaber til varig forandring. Visionen er at sikre,
+              at alle har adgang til værktøjer og støtte, så de kan trives i
+              deres hverdag og stå stærkt selv.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="custom-carousel-container">
+      <div class="custom-slide-container swiper">
+        <div class="custom-slide-content">
+          <div class="custom-card-wrapper swiper-wrapper">
+            <div class="custom-card swiper-slide">
+              <div class="custom-image-content">
+                <span class="custom-overlay"></span>
+                <div class="custom-card-image">
+                  <img src="img/profil1.jpg" alt="" class="custom-card-img" />
+                </div>
+              </div>
+              <div class="custom-card-content">
+                <h2 class="custom-name">Mette</h2>
+                <p class="custom-description">
+                  "Hanne har haft stor indflydelse på min udvikling. Jeg
+                  startede modvilligt, men gik fra angst-tankemylder til at tage
+                  kontrollen tilbage. Hanne er åben, forstående og omsorgsfuld
+                  og bruger effektive NLP-værktøjer. Hendes hjælp har været
+                  uvurderlig."
+                </p>
+              </div>
+            </div>
+
+            <div class="custom-card swiper-slide">
+              <div class="custom-image-content">
+                <span class="custom-overlay"></span>
+                <div class="custom-card-image">
+                  <img src="img/profil2.png" alt="" class="custom-card-img" />
+                </div>
+              </div>
+              <div class="custom-card-content">
+                <h2 class="custom-name">Marlene</h2>
+                <p class="custom-description">
+                  "Ved min første terapisession mærkede jeg straks, at Hanne
+                  ramte mit ’smertebarn’. Fra første møde følte jeg tryghed,
+                  tillid og omsorg. Hanne er professionel, ærlig og engageret
+                  med en varm personlighed. Jeg kan varmt anbefale Hanne til
+                  alle, der søger en dygtig terapeut."
+                </p>
+              </div>
+            </div>
+
+            <div class="custom-card swiper-slide">
+              <div class="custom-image-content">
+                <span class="custom-overlay"></span>
+                <div class="custom-card-image">
+                  <img src="img/profil3.jpg" alt="" class="custom-card-img" />
+                </div>
+              </div>
+              <div class="custom-card-content">
+                <h2 class="custom-name">Anne</h2>
+                <p class="custom-description">
+                  "Jeg var skeptisk i starten, men lovede Hanne at give
+                  'Tankevirk' en chance – og det er jeg taknemmelig for. Hanne
+                  er dygtig, rummelig og dykker dybt i sindets mekanismer. Hun
+                  har gjort mig nysgerrig på både mig selv og hendes metoder.
+                  Skynd dig at tage fat i hende – hun gør en forskel."
+                </p>
+              </div>
+            </div>
+
+            <div class="custom-card swiper-slide">
+              <div class="custom-image-content">
+                <span class="custom-overlay"></span>
+                <div class="custom-card-image">
+                  <img src="img/profil4.jpg" alt="" class="custom-card-img" />
+                </div>
+              </div>
+
+              <div class="custom-card-content">
+                <h2 class="custom-name">Marlene</h2>
+                <p class="custom-description">
+                  "Hejsa Hanne, det virker måske lidt underligt med sådan en
+                  sms, men jeg ville bare sige tak for den mest fantastiske tur
+                  i zoo. Det var en dag fyldt med ro, nærvær og tid til
+                  fordybelse – især inde ved fuglene, hvor hvert øjeblik føltes
+                  helt særligt."
+                </p>
+              </div>
+            </div>
+
+            <div class="custom-card swiper-slide">
+              <div class="custom-image-content">
+                <span class="custom-overlay"></span>
+                <div class="custom-card-image">
+                  <img src="img/profil5.jpeg" alt="" class="custom-card-img" />
+                </div>
+              </div>
+              <div class="custom-card-content">
+                <h2 class="custom-name">Mark Terndrup - Nordic Biolaps</h2>
+                <p class="custom-description">
+                  "Hanne har været en stor hjælp i min udvikling som sælger. Hun
+                  har gjort mig mere opmærksom på mine budskaber, både i ord og
+                  handling. Hendes sparring har styrket min håndtering af
+                  konflikter og relationer. Jeg kan varmt anbefale hende som
+                  underviser og coach."
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="swiper-button-next swiper-navBtn"></div>
+        <div class="swiper-button-prev swiper-navBtn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+    <section class="logos-section">
+      <div class="logos-container">
+        <div class="logo-item">
+          <img
+            src="img/certifikat4.svg"
+            alt="Dansk Psykoterapeut Forening Logo"
+          />
+        </div>
+        <div class="logo-item">
+          <img
+            src="img/certifikat2.svg"
+            alt="National Guild of Hypnotists Logo"
+          />
+        </div>
+        <div class="logo-item">
+          <img
+            src="img/certifikat1.svg"
+            alt="Tension and Trauma Releasing Exercises Logo"
+          />
+        </div>
+      </div>
+    </section>
+
+    <div class="scroll-to-top" id="scrollToTop">↑</div>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <!-- Firma Information -->
+        <div class="footer-section" aria-labelledby="firma-info-heading">
+          <h2 id="firma-info-heading">Firmainformation</h2>
+          <p>
+            Tankevirk V/ Hanne Aamand<br />
+            Dronningensvej 7, 1. TH<br />
+            5800 Nyborg<br />
+            Tlf.:
+            <a href="tel:+4527286099" aria-label="Ring til 27 28 60 99"
+              >27 28 60 99</a
+            ><br />
+            E-mail:
+            <a href="mailto:info@tankevirk.dk" aria-label="Send en mail"
+              >Skriv en mail til mig</a
+            >
+          </p>
+        </div>
+
+        <!-- Hurtige Links -->
+        <div class="footer-section" aria-labelledby="hurtige-links-heading">
+          <h2 id="hurtige-links-heading">Hurtige links</h2>
+          <ul>
+            <li><a href="#" aria-label="Coaching">Coaching</a></li>
+            <li>
+              <a href="#" aria-label="Coaching i virksomheder"
+                >Coaching i virksomheder</a
+              >
+            </li>
+            <li>
+              <a href="#" aria-label="Det siger kunderne">Det siger kunderne</a>
+            </li>
+            <li><a href="#" aria-label="GDPR">GDPR</a></li>
+            <li><a href="#" aria-label="Kontakt">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <!-- Social Media Icons -->
+        <div class="footer-section social-media" aria-label="Sociale medier">
+          <a href="#" aria-label="Instagram"
+            ><img src="img/instagram.svg" alt ="Instagram"
+            ></a>
+          <a href="#" aria-label="Facebook"
+            ><img src="img/facebook.svg" alt="Facebook"
+          /></a>
+          <a href="#" aria-label="LinkedIn"
+            ><img src="img/linkedin.svg" alt="LinkedIn"
+          /></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/forside.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
